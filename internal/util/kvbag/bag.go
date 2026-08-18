@@ -5,7 +5,7 @@ type Bag struct {
 }
 
 func New() *Bag {
-	return &Bag{}
+	return &Bag{m: make(map[string]string)}
 }
 
 func (b *Bag) Set(k, v string) {
